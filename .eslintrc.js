@@ -12,10 +12,6 @@ module.exports = {
             2,
             "unix"
         ],
-        "semi": [
-            2,
-            "never"
-        ]
     },
     "env": {
         "es6": true,
