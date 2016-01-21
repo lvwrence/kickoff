@@ -4,7 +4,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   entry: __dirname + '/src/js/main.js',
   resolve: {
-    root: path.resolve('./src/js')
+    root: path.resolve(__dirname, 'src/js')
   },
   output: {
     path: __dirname + '/dist',

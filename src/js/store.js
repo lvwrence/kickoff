@@ -1,16 +1,16 @@
 import { browserHistory } from 'react-router';
 import { syncHistory, routeReducer } from 'redux-simple-router';
-import { createStore, compose, combineReducers } from 'redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 
 function todos(state = [], action) {
-  switch (action.type) {
+    switch (action.type) {
     default:
-      return state;
-  }
+        return state;
+    }
 }
 
 const reducer = combineReducers(Object.assign({}, todos, {
-  routing: routeReducer
+    routing: routeReducer,
 }));
 
 const reduxRouterMiddleware = syncHistory(browserHistory);
