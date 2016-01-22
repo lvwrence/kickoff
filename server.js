@@ -13,6 +13,4 @@ app.use(bodyParser());
 app.use(serve('dist'));
 app.use(router.routes());
 
-
-
 module.exports = app;
